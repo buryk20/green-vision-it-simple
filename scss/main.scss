@@ -1,0 +1,251 @@
+@import "_mixin.scss";
+
+%position-bloc-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%text-h2-sim {
+  font-family: $font-sim;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+%position-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%position-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%fonts-rob {
+  font-family: $font-sim;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header-bun-sim {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/bunner-bac-header-sim.jpg");
+  background-color: #f1f1f1;
+}
+
+.header-bun-sim > h1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $font-header-sim;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: $color-text-header-sim;
+}
+
+.header-bun-sim > h1 > span {
+  font-size: 2.2em;
+}
+.wrp-sim {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.wrp-sim > p {
+  max-width: 1116px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  @extend %fonts-rob;
+  font-size: 18px;
+  text-align: center;
+}
+.line-sim {
+  border-top: 1px solid #c4c4c4;
+  margin-bottom: 40px;
+}
+
+.wrp-sim > h2 {
+  @extend %text-h2-sim;
+  margin-bottom: 24px;
+}
+
+.icon-wrp-sim {
+  @extend %position-flex;
+  margin-bottom: 16px;
+}
+
+.icon-wrp-sim > p {
+  @extend %fonts-rob;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.products-wrp-sim {
+  @extend %position-flex;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  padding-top: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-sim + .product-sim {
+  margin-left: 16px;
+}
+.product-sim {
+  @include box-sim;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.product-sim > img {
+  @extend %position-bloc-center;
+}
+
+.product-sim > h3 {
+  @extend %fonts-rob;
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.product-sim > p {
+  @extend %fonts-rob;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.price-block-wrp-sim {
+  @extend %position-flex;
+  padding-bottom: 16px;
+}
+
+.price-block-wrp-sim > p {
+  @extend %text-h2-sim;
+  font-size: 28px;
+}
+
+.price-block-wrp-sim > p > span {
+  font-size: 0.7em;
+}
+.price-but-sim {
+  @include button-sim;
+  cursor: pointer;
+}
+
+.price-but-sim:hover {
+  background-color: #106e19;
+}
+.box-inst-sim {
+  @include box-installation-sim;
+  @extend %fonts-rob;
+  @extend %position-flex-center;
+}
+
+.box-inst-img-sim {
+  @extend %position-bloc-center;
+  position: absolute;
+  top: -154px;
+  left: 40px;
+}
+
+.box-inst-wrp-sim {
+  max-width: 212px;
+  position: relative;
+}
+
+.box-inst-wrp-sim + .box-inst-wrp-sim {
+  margin-left: 95px;
+}
+
+.box-inst-wrp-total-sim {
+  @extend %position-flex-center;
+  padding-top: 154px;
+  margin-bottom: 40px;
+}
+
+.box-inst-icon-sim {
+  position: absolute;
+  top: -106px;
+  right: -79px;
+}
+
+.guarantee-wrp-sim {
+  @extend %position-flex-center;
+  @extend %fonts-rob;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-image: url("../img/guarantee-back-sim.jpg");
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  min-height: 478px;
+  color: #ffffff;
+}
+
+.guarantee-posit-sim {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guarantee-posit-sim > h2 {
+  margin-bottom: 40px;
+}
+
+.guarantee-posit-sim > p {
+  max-width: 519px;
+}
+.kit-img-sim {
+  @extend %position-bloc-center;
+}
+.kit-btn-sim {
+  @extend %position-bloc-center;
+  @extend %fonts-rob;
+  position: relative;
+  margin-bottom: 50px;
+  padding: 26px 67px 26px 22px;
+  box-sizing: border-box;
+
+  font-size: 36px;
+  background-color: #ffffff;
+  border: 1px solid #159822;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.link-btn-sim {
+  color: #159822;
+  text-decoration: none;
+}
+
+// .kit-btn-sim .kit-btn-sim > a > img {
+//   position: absolute;
+//   top: 33px;
+//   right: 35px;
+// }
+.video-kit-sim {
+  @extend %position-bloc-center;
+}
+.icon-btn-sim {
+  position: absolute;
+  top: 33px;
+  right: 35px;
+  transition: all 0.3s ease 0.15s;
+}
+
+.kit-btn-sim:hover .icon-btn-sim {
+  right: 25px;
+  transition: all 0.3s ease 0.15s;
+}
