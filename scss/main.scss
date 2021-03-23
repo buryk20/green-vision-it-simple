@@ -38,6 +38,7 @@
     align-items: center;
     justify-content: center;
     background: url("../img/bunner-bac-header-sim.jpg");
+    background-position: center;
     background-color: #f1f1f1;
 }
 
@@ -246,9 +247,11 @@
 //   top: 33px;
 //   right: 35px;
 // }
-.video-kit-sim {
-    @extend %position-bloc-center;
-}
+    // .video-kit-sim {
+    //     @extend %position-bloc-center;
+    //     width: 50%;
+    //     height: 535px;
+    // }
 
 .icon-btn-sim {
     position: absolute;
@@ -261,3 +264,19 @@
     right: 25px;
     transition: all 0.3s ease 0.15s;
 }
+
+.thumb-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+  }
+  .thumb-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
