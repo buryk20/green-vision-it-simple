@@ -48,6 +48,7 @@
   justify-content: center;
   background: url("../img/bunner-bac-header-sim.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-color: #f1f1f1;
 }
 
@@ -210,6 +211,7 @@
   margin-bottom: 40px;
   background-image: url("../img/guarantee-back-sim.jpg");
   background-color: #c4c4c4;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 478px;
   color: #ffffff;
@@ -219,6 +221,10 @@
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.guarantee-posit-sim > ul {
+  padding: 17px;
 }
 
 .guarantee-posit-sim > h2 {
@@ -312,6 +318,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
+  align-items: flex-end;
 }
 
 .box-access-img-sim {
@@ -324,4 +331,80 @@
 .box-access-icon-sim {
   position: relative;
   top: -27px;
+}
+
+.box-inst-icon-mob-sim {
+  display: none;
+}
+
+@media (max-width: 1466px) {
+  .guarantee-posit-sim {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 1326px) {
+  .wrp-kit-sim {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1178px) {
+  .box-inst-wrp-total-sim {
+    align-items: center;
+    flex-direction: column;
+  }
+  .box-inst-wrp-sim {
+    margin-bottom: 10px;
+  }
+  .box-inst-icon-sim {
+    display: none;
+  }
+  .box-inst-pos-sim {
+    flex-direction: column;
+  }
+  .box-inst-icon-mob-sim {
+    display: flex;
+    height: 89px;
+  }
+  .wrp-video-sim {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 936px) {
+  .products-wrp-sim {
+    justify-content: space-evenly;
+  }
+  .product-sim + .product-sim {
+    margin-left: 0;
+  }
+  .wrp-sim > p {
+    padding: 0 16px;
+  }
+  .wrp-sim > h2 {
+    padding: 0 16px;
+  }
+  .header-bun-sim {
+    background: url("../img/bunner-bac-head-bom-sim.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f1f1f1;
+  }
+}
+
+@media (max-width: 596px) {
+  .kit-img-sim {
+    width: 100%;
+  }
+  .header-bun-sim > h1 {
+    font-size: 30px;
+  }
+  .kit-btn-sim {
+    font-size: 24px;
+  }
+  .icon-btn-sim {
+    top: 22px;
+  }
 }
