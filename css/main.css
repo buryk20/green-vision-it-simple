@@ -8,7 +8,7 @@
   src: url("../fonts/");
 }
 
-.product-sim > img, .box-inst-img-sim, .kit-img-sim, .kit-btn-sim {
+.product-sim > img, .box-inst-img-sim, .kit-img-sim, .kit-btn-sim, .box-access-img-sim {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -21,27 +21,15 @@
 }
 
 .icon-wrp-sim, .products-wrp-sim, .price-block-wrp-sim {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .box-inst-sim, .box-inst-wrp-total-sim, .guarantee-wrp-sim {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrp-sim > p, .icon-wrp-sim > p, .product-sim > h3, .product-sim > p, .box-inst-sim, .guarantee-wrp-sim, .kit-btn-sim, .wrp-kit-text-sim {
@@ -55,28 +43,17 @@
 
 .header-bun-sim {
   min-height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background: url("../img/bunner-bac-header-sim.jpg");
   background-position: center;
   background-color: #f1f1f1;
 }
 
 .header-bun-sim > h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0;
   font-family: "Montserrat", Tahoma, Geneva, sans-serif;
   text-transform: uppercase;
@@ -128,11 +105,8 @@
   margin-right: auto;
   margin-bottom: 26px;
   padding-top: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .product-sim + .product-sim {
@@ -141,8 +115,7 @@
 
 .product-sim {
   max-width: 300px;
-  -webkit-box-shadow: 0px 3px 11px #f3f3f3;
-          box-shadow: 0px 3px 11px #f3f3f3;
+  box-shadow: 0px 3px 11px #f3f3f3;
   padding: 0 16px;
   margin-bottom: 16px;
   border-radius: 8px;
@@ -171,7 +144,7 @@
 }
 
 .price-block-wrp-sim > p > span {
-  font-size: 1.0em;
+  font-size: 1em;
 }
 
 .price-but-sim {
@@ -196,12 +169,15 @@
   height: 66px;
   border: 1px solid #d1d1d1;
   border-radius: 8px;
+  padding: 0 16px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .box-inst-img-sim {
-  position: absolute;
-  top: -154px;
-  left: 40px;
+  position: relative;
+  top: 7px;
+  left: 0;
 }
 
 .box-inst-wrp-sim {
@@ -214,20 +190,23 @@
 }
 
 .box-inst-wrp-total-sim {
-  padding-top: 154px;
   margin-bottom: 40px;
+  align-items: flex-end;
+}
+
+.box-inst-pos-sim {
+  display: flex;
 }
 
 .box-inst-icon-sim {
-  position: absolute;
-  top: -106px;
-  right: -79px;
+  position: relative;
+  top: -27px;
+  padding-left: 19px;
+  margin-right: 19px;
 }
 
 .guarantee-wrp-sim {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 40px;
   background-image: url("../img/guarantee-back-sim.jpg");
   background-color: #c4c4c4;
@@ -253,9 +232,8 @@
 .kit-btn-sim {
   position: relative;
   margin-bottom: 50px;
-  padding: 26px 67px 26px 22px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 22px 76px 22px 44px;
+  box-sizing: border-box;
   font-size: 36px;
   color: #159822;
   background-color: #ffffff;
@@ -271,15 +249,13 @@
 
 .icon-btn-sim {
   position: absolute;
-  top: 33px;
+  top: 29px;
   right: 35px;
-  -webkit-transition: all 0.3s ease 0.15s;
   transition: all 0.3s ease 0.15s;
 }
 
 .kit-btn-sim:hover .icon-btn-sim {
   right: 25px;
-  -webkit-transition: all 0.3s ease 0.15s;
   transition: all 0.3s ease 0.15s;
 }
 
@@ -299,14 +275,14 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .wrp-video-sim {
   max-width: 1109px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 }
 
 .wrp-kit-box-sim {
@@ -314,25 +290,16 @@
   min-height: 104px;
   border: 1px solid #d1d1d1;
   border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .wrp-kit-text-sim {
   padding: 0 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .wrp-kit-img-sim {
@@ -342,11 +309,19 @@
 }
 
 .wrp-kit-sim {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-bottom: 40px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.box-access-img-sim {
+  position: relative;
+  top: -13px;
+  left: 3px;
+  padding-top: 20px;
+}
+
+.box-access-icon-sim {
+  position: relative;
+  top: -27px;
+}

@@ -1,319 +1,329 @@
 @import "_mixin.scss";
 %position-bloc-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 %text-h2-sim {
-    font-family: $font-sim;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: $font-sim;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 %position-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 %position-flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 %fonts-rob {
-    font-family: $font-sim;
+  font-family: $font-sim;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .header-bun-sim {
-    min-height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url("../img/bunner-bac-header-sim.jpg");
-    background-position: center;
-    background-color: #f1f1f1;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/bunner-bac-header-sim.jpg");
+  background-position: center;
+  background-color: #f1f1f1;
 }
 
-.header-bun-sim>h1 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: $font-header-sim;
-    text-transform: uppercase;
-    font-size: 36px;
-    color: $color-text-header-sim;
+.header-bun-sim > h1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $font-header-sim;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: $color-text-header-sim;
 }
 
-.header-bun-sim>h1>span {
-    font-size: 2.2em;
+.header-bun-sim > h1 > span {
+  font-size: 2.2em;
 }
 
 .wrp-sim {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
 }
 
-.wrp-sim>p {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    @extend %fonts-rob;
-    font-size: 18px;
-    text-align: center;
+.wrp-sim > p {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  @extend %fonts-rob;
+  font-size: 18px;
+  text-align: center;
 }
 
 .line-sim {
-    border-top: 1px solid #c4c4c4;
-    margin-bottom: 40px;
+  border-top: 1px solid #c4c4c4;
+  margin-bottom: 40px;
 }
 
-.wrp-sim>h2 {
-    @extend %text-h2-sim;
-    margin-bottom: 24px;
+.wrp-sim > h2 {
+  @extend %text-h2-sim;
+  margin-bottom: 24px;
 }
 
 .icon-wrp-sim {
-    @extend %position-flex;
-    margin-bottom: 16px;
+  @extend %position-flex;
+  margin-bottom: 16px;
 }
 
-.icon-wrp-sim>p {
-    @extend %fonts-rob;
-    font-size: 12px;
-    color: #8a8a8a;
+.icon-wrp-sim > p {
+  @extend %fonts-rob;
+  font-size: 12px;
+  color: #8a8a8a;
 }
 
 .products-wrp-sim {
-    @extend %position-flex;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 26px;
-    padding-top: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
+  @extend %position-flex;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+  padding-top: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.product-sim+.product-sim {
-    margin-left: 16px;
+.product-sim + .product-sim {
+  margin-left: 16px;
 }
 
 .product-sim {
-    @include box-sim;
-    padding: 0 16px;
-    margin-bottom: 16px;
-    border-radius: 8px;
+  @include box-sim;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
 }
 
-.product-sim>img {
-    @extend %position-bloc-center;
+.product-sim > img {
+  @extend %position-bloc-center;
 }
 
-.product-sim>h3 {
-    @extend %fonts-rob;
-    margin-bottom: 4px;
-    font-weight: 600;
-    font-size: 16px;
+.product-sim > h3 {
+  @extend %fonts-rob;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.product-sim>p {
-    @extend %fonts-rob;
-    margin-bottom: 24px;
-    font-size: 20px;
-    font-weight: 600;
+.product-sim > p {
+  @extend %fonts-rob;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .price-block-wrp-sim {
-    @extend %position-flex;
-    padding-bottom: 16px;
+  @extend %position-flex;
+  padding-bottom: 16px;
 }
 
-.price-block-wrp-sim>p {
-    @extend %text-h2-sim;
-    font-size: 28px;
-    font-weight: 600;
-    text-transform: inherit;
+.price-block-wrp-sim > p {
+  @extend %text-h2-sim;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: inherit;
 }
 
-.price-block-wrp-sim>p>span {
-    font-size: 1.0em;
+.price-block-wrp-sim > p > span {
+  font-size: 1em;
 }
 
 .price-but-sim {
-    @include button-sim;
-    cursor: pointer;
+  @include button-sim;
+  cursor: pointer;
 }
 
 .price-but-sim:hover {
-    background-color: #106e19;
+  background-color: #106e19;
 }
 
 .box-inst-sim {
-    @include box-installation-sim;
-    @extend %fonts-rob;
-    @extend %position-flex-center;
+  @include box-installation-sim;
+  @extend %fonts-rob;
+  @extend %position-flex-center;
+  padding: 0 16px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .box-inst-img-sim {
-    @extend %position-bloc-center;
-    position: absolute;
-    top: -154px;
-    left: 40px;
+  @extend %position-bloc-center;
+  position: relative;
+  top: 7px;
+  left: 0;
 }
 
 .box-inst-wrp-sim {
-    max-width: 212px;
-    position: relative;
+  max-width: 212px;
+  position: relative;
 }
 
-.box-inst-wrp-sim+.box-inst-wrp-sim {
-    margin-left: 95px;
+.box-inst-wrp-sim + .box-inst-wrp-sim {
+  margin-left: 95px;
 }
 
 .box-inst-wrp-total-sim {
-    @extend %position-flex-center;
-    padding-top: 154px;
-    margin-bottom: 40px;
+  @extend %position-flex-center;
+  margin-bottom: 40px;
+  align-items: flex-end;
+}
+
+.box-inst-pos-sim {
+  display: flex;
 }
 
 .box-inst-icon-sim {
-    position: absolute;
-    top: -106px;
-    right: -79px;
+  position: relative;
+  top: -27px;
+  padding-left: 19px;
+  margin-right: 19px;
 }
 
 .guarantee-wrp-sim {
-    @extend %position-flex-center;
-    @extend %fonts-rob;
-    justify-content: center;
-    margin-bottom: 40px;
-    background-image: url("../img/guarantee-back-sim.jpg");
-    background-color: #c4c4c4;
-    background-repeat: no-repeat;
-    min-height: 478px;
-    color: #ffffff;
+  @extend %position-flex-center;
+  @extend %fonts-rob;
+  justify-content: center;
+  margin-bottom: 40px;
+  background-image: url("../img/guarantee-back-sim.jpg");
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  min-height: 478px;
+  color: #ffffff;
 }
 
 .guarantee-posit-sim {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.guarantee-posit-sim>h2 {
-    margin-bottom: 40px;
+.guarantee-posit-sim > h2 {
+  margin-bottom: 40px;
 }
 
-.guarantee-posit-sim>p {
-    max-width: 519px;
+.guarantee-posit-sim > p {
+  max-width: 519px;
 }
 
 .kit-img-sim {
-    @extend %position-bloc-center;
+  @extend %position-bloc-center;
 }
 
 .kit-btn-sim {
-    @extend %position-bloc-center;
-    @extend %fonts-rob;
-    position: relative;
-    margin-bottom: 50px;
-    padding: 26px 67px 26px 22px;
-    box-sizing: border-box;
-    font-size: 36px;
-    color: #159822;
-    background-color: #ffffff;
-    border: 1px solid #159822;
-    border-radius: 6px;
-    cursor: pointer;
-
+  @extend %position-bloc-center;
+  @extend %fonts-rob;
+  position: relative;
+  margin-bottom: 50px;
+  padding: 22px 76px 22px 44px;
+  box-sizing: border-box;
+  font-size: 36px;
+  color: #159822;
+  background-color: #ffffff;
+  border: 1px solid #159822;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .link-btn-sim {
-    color: #159822;
-    text-decoration: none;
+  color: #159822;
+  text-decoration: none;
 }
 
-// .kit-btn-sim .kit-btn-sim > a > img {
-//   position: absolute;
-//   top: 33px;
-//   right: 35px;
-// }
-    // .video-kit-sim {
-    //     @extend %position-bloc-center;
-    //     width: 50%;
-    //     height: 535px;
-    // }
-
 .icon-btn-sim {
-    position: absolute;
-    top: 33px;
-    right: 35px;
-    transition: all 0.3s ease 0.15s;
+  position: absolute;
+  top: 29px;
+  right: 35px;
+  transition: all 0.3s ease 0.15s;
 }
 
 .kit-btn-sim:hover .icon-btn-sim {
-    right: 25px;
-    transition: all 0.3s ease 0.15s;
+  right: 25px;
+  transition: all 0.3s ease 0.15s;
 }
 
 .thumb-wrap {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-  }
-  .thumb-wrap iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-width: 0;
-    outline-width: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-  }
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 
-  .wrp-video-sim {
-      max-width: 1109px;
-      margin-left: auto;
-      margin-right: auto;
-  }
+.wrp-video-sim {
+  max-width: 1109px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
 
-  .wrp-kit-box-sim {
-      @include box-kit-sim;
-      display: flex;
-  }
+.wrp-kit-box-sim {
+  @include box-kit-sim;
+  display: flex;
+}
 
-  .wrp-kit-text-sim {
-    @extend %fonts-rob;
-    padding: 0 16px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    box-sizing: border-box;
-  }
+.wrp-kit-text-sim {
+  @extend %fonts-rob;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+}
 
-  .wrp-kit-img-sim {
-      position: relative;
-      top: 10px;
-      left: 61px;
-  }
+.wrp-kit-img-sim {
+  position: relative;
+  top: 10px;
+  left: 61px;
+}
 
-  .wrp-kit-sim {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 40px;
-  }
+.wrp-kit-sim {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.box-access-img-sim {
+  @extend %position-bloc-center;
+  position: relative;
+  top: -13px;
+  left: 3px;
+  padding-top: 20px;
+}
+
+.box-access-icon-sim {
+  position: relative;
+  top: -27px;
+}
