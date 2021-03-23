@@ -34,3 +34,10 @@ $color-text-header-sim: #00983d;
   border: 1px solid #d1d1d1;
   border-radius: 8px;
 }
+
+@mixin box-kit-sim {
+  width: 262px;
+  min-height: 104px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+}
