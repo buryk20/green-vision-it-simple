@@ -270,6 +270,12 @@
   max-width: 519px;
 }
 
+.kit-img-sim {
+  margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .kit-btn-sim {
   position: relative;
   margin-bottom: 50px;
@@ -285,6 +291,7 @@
 }
 
 .link-btn-sim {
+  display: contents;
   color: #159822;
   text-decoration: none;
 }
@@ -390,6 +397,10 @@
   display: none;
 }
 
+.tel-sim {
+  color: #159822;
+}
+
 @media (max-width: 1466px) {
   .guarantee-posit-sim {
     padding: 0 16px;
@@ -404,6 +415,10 @@
 }
 
 @media (max-width: 1178px) {
+  .kit-img-sim {
+    width: 100%;
+    padding: 0 16px;
+  }
   .box-inst-wrp-total-sim {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -468,10 +483,10 @@
     font-size: 30px;
   }
   .kit-btn-sim {
-    font-size: 24px;
+    font-size: 22px;
   }
   .icon-btn-sim {
-    top: 22px;
+    top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

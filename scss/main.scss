@@ -236,6 +236,8 @@
 
 .kit-img-sim {
   @extend %position-bloc-center;
+  margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .kit-btn-sim {
@@ -254,6 +256,7 @@
 }
 
 .link-btn-sim {
+  display: contents;
   color: #159822;
   text-decoration: none;
 }
@@ -340,6 +343,10 @@
   display: none;
 }
 
+.tel-sim {
+    color: #159822;
+}
+
 @media (max-width: 1466px) {
   .guarantee-posit-sim {
     padding: 0 16px;
@@ -353,6 +360,10 @@
 }
 
 @media (max-width: 1178px) {
+    .kit-img-sim {
+        width: 100%;
+        padding: 0 16px;
+      }
   .box-inst-wrp-total-sim {
     align-items: center;
     flex-direction: column;
@@ -406,9 +417,9 @@
     font-size: 30px;
   }
   .kit-btn-sim {
-    font-size: 24px;
+    font-size: 22px;
   }
   .icon-btn-sim {
-    top: 22px;
+    top: 20px;
   }
 }
