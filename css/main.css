@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/");
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
 }
 
 .product-sim > img, .box-inst-img-sim, .kit-img-sim, .kit-btn-sim, .box-access-img-sim {
@@ -21,15 +21,27 @@
 }
 
 .icon-wrp-sim, .products-wrp-sim, .price-block-wrp-sim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .box-inst-sim, .box-inst-wrp-total-sim, .guarantee-wrp-sim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrp-sim > p, .icon-wrp-sim > p, .product-sim > h3, .product-sim > p, .box-inst-sim, .guarantee-wrp-sim, .kit-btn-sim, .wrp-kit-text-sim {
@@ -43,9 +55,15 @@
 
 .header-bun-sim {
   min-height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: url("../img/bunner-bac-header-sim.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -53,17 +71,23 @@
 }
 
 .header-bun-sim > h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   font-family: "Montserrat", Tahoma, Geneva, sans-serif;
   text-transform: uppercase;
   font-size: 36px;
+  text-align: center;
   color: #00983d;
 }
 
 .header-bun-sim > h1 > span {
-  font-size: 2.3em;
+  font-size: 2.2em;
 }
 
 .wrp-sim {
@@ -106,8 +130,11 @@
   margin-right: auto;
   margin-bottom: 26px;
   padding-top: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .product-sim + .product-sim {
@@ -116,7 +143,8 @@
 
 .product-sim {
   max-width: 300px;
-  box-shadow: 0px 3px 11px #f3f3f3;
+  -webkit-box-shadow: 0px 3px 11px #f3f3f3;
+          box-shadow: 0px 3px 11px #f3f3f3;
   padding: 0 16px;
   margin-bottom: 16px;
   border-radius: 8px;
@@ -172,7 +200,8 @@
   border-radius: 8px;
   padding: 0 16px;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box-inst-img-sim {
@@ -192,10 +221,14 @@
 
 .box-inst-wrp-total-sim {
   margin-bottom: 40px;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .box-inst-pos-sim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -207,7 +240,9 @@
 }
 
 .guarantee-wrp-sim {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 40px;
   background-image: url("../img/guarantee-back-sim.jpg");
   background-color: #c4c4c4;
@@ -239,7 +274,8 @@
   position: relative;
   margin-bottom: 50px;
   padding: 22px 76px 22px 44px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 36px;
   color: #159822;
   background-color: #ffffff;
@@ -257,11 +293,13 @@
   position: absolute;
   top: 29px;
   right: 35px;
+  -webkit-transition: all 0.3s ease 0.15s;
   transition: all 0.3s ease 0.15s;
 }
 
 .kit-btn-sim:hover .icon-btn-sim {
   right: 25px;
+  -webkit-transition: all 0.3s ease 0.15s;
   transition: all 0.3s ease 0.15s;
 }
 
@@ -281,7 +319,8 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .wrp-video-sim {
@@ -296,16 +335,25 @@
   min-height: 104px;
   border: 1px solid #d1d1d1;
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .wrp-kit-text-sim {
   padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrp-kit-img-sim {
@@ -315,10 +363,15 @@
 }
 
 .wrp-kit-sim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 40px;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .box-access-img-sim {
@@ -345,14 +398,20 @@
 
 @media (max-width: 1326px) {
   .wrp-kit-sim {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media (max-width: 1178px) {
   .box-inst-wrp-total-sim {
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .box-inst-wrp-sim {
     margin-bottom: 10px;
@@ -361,9 +420,14 @@
     display: none;
   }
   .box-inst-pos-sim {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .box-inst-icon-mob-sim {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 89px;
   }
@@ -374,7 +438,9 @@
 
 @media (max-width: 936px) {
   .products-wrp-sim {
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .product-sim + .product-sim {
     margin-left: 0;
@@ -408,3 +474,4 @@
     top: 22px;
   }
 }
+/*# sourceMappingURL=main.css.map */
